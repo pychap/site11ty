@@ -1,21 +1,20 @@
 ---
-title: EleventyOne
-subtitle: A project scaffold for getting building with Eleventy quickly.<br /> Made by <a href="https://twitter.com/philhawksworth">Phil</a> for <a href="https://twitter.com/philhawksworth">Phil</a>, but perhaps you might also find it useful.
+title: peterY
+subtitle: This site to peg a stake for me in the digital world using <a href="https://www.11ty.dev/" target="_blank">Eleventy</a> / Netlify / PostCSS, somewhat quickly.
 layout: layouts/base.njk
 ---
 
 
-## This site is a starting point
+## All the things I find interest in, yet blocked by not enough time in the day:
 
-From this point we should already have:
+Recent projects, Skills, interests, ramblings:
 
-- [Eleventy](https://11ty.io) with a skeleton site
-- A date format filter for Nunjucks based on [Luxon](https://moment.github.io/luxon)
-- A tiny CSS pipeline with PostCSS
-- A tiny inline JS pipeline. (<a href="#" class="btn-log">Test a console.log message</a>)
-- JS [search index](/search.json) generator
-- [Netlify Dev](https://www.netlify.com/products/dev) for testing [Netlify redirects](https://netlify.com/docs/redirects/)
-- Serverless (FaaS) development pipeline with [Netlify Dev](https://www.netlify.com/products/dev) and [Netlify Functions](https://www.netlify.com/products/functions)
+- [Chalk](https://chalk.vuforia.com/): wrote all CSS using Grid, Flexbox
+- [Engine.Vuforia.com](https://engine.vuforia.com/engine): wrote all CSS using Flexbox
+- **Apps:**  
+  * Chalk Desktop (styling in a component environment using LitHTML)  
+  * Chalk Admin
+
 
 
 
@@ -32,22 +31,9 @@ The pages found in in the posts
 {%- endfor -%}
 </ul>
 
-## Links from an external data source
+## Learning
 
-These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
-
-<ul class="listing">
-{%- for item in hawksworx.entries.slice(0,5) -%}
-  <li>
-    <a href="{{ item.link }}">{{ item.title }}</a>
-  </li>
-{%- endfor -%}
-</ul>
-
-
-## Prerequisite
-
-- [Node and NPM](https://nodejs.org/)
+- Currently working my way through Zell Liew's **[Learn Javascript](https://learnjavascript.today/)** and Wes Bos's **[Beginner JavaScript](https://wesbos.com/beginner-javascript/)**
 
 ## Running locally
 
@@ -62,21 +48,6 @@ npm run seed
 npm run start
 ```
 
-## Add some Netlify helpers
-Netlify Dev adds the ability to use Netlify redirects, proxies, and serverless functions.
-
-```bash
-# install the Netlify CLI in order to get Netlify Dev
-npm install -g netlify-cli
-
-# run a local server with some added Netlify sugar in front of Eleventy
-netlify dev
-```
-
-A serverless functions pipeline is included via Netlify Dev. By running `netlify dev` you'll be able to execute any of your serverless functions directly like this:
-
-- [/.netlify/functions/hello](/.netlify/functions/hello)
-- [/.netlify/functions/fetch-joke](/.netlify/functions/fetch-joke)
 
 ### Redirects and proxies
 
