@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/056b4a67-70e6-4af4-9be5-dee151b8e906/deploy-status)](https://app.netlify.com/sites/eleventyone/deploys)
 
-Phil's first port of call when starting another project using Eleventy.
+My website based on Phil Hawksworth's template, a project using Eleventy and netlify.
 
 This project scaffold includes:
 
