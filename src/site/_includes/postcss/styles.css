@@ -64,7 +64,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Libre Baskerville';
+  /* font-family: 'Libre Baskerville'; */
+  font-family: 'Alegreya', serif;;
   color: $text-color;
   font-weight: 300;
   margin-top: 2em;
