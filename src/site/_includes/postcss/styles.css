@@ -1,6 +1,6 @@
 @import '_variables.css';
 @import '_syntax.css';
-/* @import url('https://fonts.googleapis.com/css?family=Lato|Libre+Baskerville'); */
+@import '_typography.css';
 
 
 * {
@@ -19,19 +19,19 @@
 }
 
 html {
-  background-color: $accent-color;
+  background-color: $white-color;
 }
 
 body {
   text-align: center;
-  background-color: $page-color;
+  background-color: $white-color;
   color: mix($text-color, $page-color, 90%);
   font-family: sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8;
   min-height: 100vh;
-  background: $page-color;
+  background: $white-color;
   background: url(/images/bg-grid.png), repeating-linear-gradient(90deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),repeating-linear-gradient(0deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),repeating-linear-gradient(135deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),linear-gradient(90deg, hsl(275,3%,97%),hsl(275,3%,97%));
 
   @media (min-width: $narrow) {
@@ -74,22 +74,29 @@ h3 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: var(--step-1);
   margin-top: 0.4em;
   margin-bottom: 0.2em;
   line-height: 1;
 
-  @media (min-width: $mid) {
+  /* @media (min-width: $mid) {
     font-size: 5em;
-  }
+  } */
 
   ;
 
-  @media (min-width: $wide) {
+  /* @media (min-width: $wide) {
     font-size: 6em;
-  }
+  } */
 
   ;
+}
+
+h2 {
+  font-size: var(--step-3);
+}
+h3 {
+  font-size: var(--step-4);
 }
 
 p {
