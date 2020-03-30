@@ -1,5 +1,5 @@
 ---
-title: Another post page
+title: First post
 date: 2018-03-28
 ---
 

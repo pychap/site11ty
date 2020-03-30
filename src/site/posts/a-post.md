@@ -1,5 +1,5 @@
 ---
-title: A post pages
+title: Second post
 date: 2020-03-03
 ---
 

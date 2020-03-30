@@ -5,14 +5,15 @@
 
  code[class*="language-"],
  pre[class*="language-"] {
-     color: rgb(42, 65, 77);
+     /* color: rgb(42, 65, 77); */
+     color: tomato;
      font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
      direction: ltr;
      text-align: left;
      white-space: pre;
      word-spacing: normal;
      word-break: normal;
-     font-size: 0.9em;
+     font-size: var(--step--1);
      line-height: 1.2em;
 
      -moz-tab-size: 4;
@@ -27,12 +28,12 @@
 
  pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
  code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-     background: #b3d4fc;
+     background: #1D2931;
  }
 
  pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
  code[class*="language-"]::selection, code[class*="language-"] ::selection {
-     background: #b3d4fc;
+     background: #1D2931;
  }
 
  /* Code blocks */
@@ -40,7 +41,8 @@
      padding: 1em;
      margin: 2em 0;
      overflow: auto;
-     background-color: mix($text-color,$accent-color, 80%);
+     /* background-color: mix($text-color,$accent-color, 80%); */
+     background-color: #1D2931;
  }
 
 
